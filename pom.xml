@@ -91,7 +91,7 @@
         <scriptSourceDirectory>/var/lib/jenkins/jobs/Adverstar1.0test/workspace/src/main/scripts</scriptSourceDirectory>
         <testSourceDirectory>/var/lib/jenkins/jobs/Adverstar1.0test/workspace/src/test/java</testSourceDirectory>
         <outputDirectory>/var/lib/jenkins/jobs/Adverstar1.0test/workspace/target/classes</outputDirectory>
-        <testOutputDirectory/var/lib/jenkins/jobs/Adverstar1.0test/workspace/target/test-classes</testOutputDirectory>
+        <testOutputDirectory>var/lib/jenkins/jobs/Adverstar1.0test/workspace/target/test-classes</testOutputDirectory>
 
     <resources>
         <resource>
@@ -275,12 +275,7 @@
                     </goals>
                     <configuration>
                         <outputDirectory>/var/lib/jenkins/jobs/Adverstar1.0test/workspace/target/site</outputDirectory>
-                        <reportPlugins>
-                            <reportPlugin>
-                                <groupId>org.apache.maven.plugins</groupId>
-                                <artifactId>maven-project-info-reports-plugin</artifactId>
-                            </reportPlugin>
-                        </reportPlugins>
+
                     </configuration>
                 </execution>
             </executions>
