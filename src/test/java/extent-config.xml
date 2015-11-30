@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- title of the document -->
+        <documentTitle>ExtentReports 2.0</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>Automation Report</reportName>
+        
+        <!-- report headline - displayed at top-nav, after reportHeadline -->
+        <reportHeadline></reportHeadline>
+        
+        <!-- custom javascript -->
+        <js>
+            <![CDATA[
+                $(document).ready(function() {
+                    $('#enableDashboard').click();
+                });
+            ]]>
+        </js>
+        
+        <!-- custom styles -->
+        <css>
+            <![CDATA[
+                
+            ]]>
+        </css>
+    </configuration>
+</extentreports>
