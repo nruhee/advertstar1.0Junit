@@ -34,7 +34,7 @@ import static org.junit.Assert.fail;
 
 public class AdminHome {
 
-
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/AdminHome.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
@@ -43,8 +43,15 @@ public class AdminHome {
     private StringBuffer verificationErrors = new StringBuffer();
     private ExtentTest test;
 
+    @BeforeClass
+    public static void beforeClass() {
+        extent = new ExtentReports(REPORT_FILE_LOCATION, true);
+    }
 
-
+    @AfterClass
+    public static void afterClass() {
+        extent.flush();
+    }
 
 
     @Before
