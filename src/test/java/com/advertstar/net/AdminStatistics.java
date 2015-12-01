@@ -34,7 +34,7 @@ import static org.junit.Assert.fail;
 
 public class AdminStatistics {
 
-    public static final String REPORT_FILE_LOCATION = "target\\AdminStatistics.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/AdminStatistics.html";
 
 
     private static ExtentReports extent;

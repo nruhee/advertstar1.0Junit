@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
 
 public class AdvertiserMenuLinks {
 
-    public static final String REPORT_FILE_LOCATION = "target\\AdvertiserMenuLinks.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/AdvertiserMenuLinks.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

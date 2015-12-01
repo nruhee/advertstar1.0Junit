@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
 
 public class WebmasterOffers {
 
-    public static final String REPORT_FILE_LOCATION = "target\\WebmasterOffers.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/WebmasterOffers.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

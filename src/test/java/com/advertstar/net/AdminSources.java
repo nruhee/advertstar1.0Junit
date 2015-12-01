@@ -14,7 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class AdminSources {
-    public static final String REPORT_FILE_LOCATION = "target\\AdminSources.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/AdminSources.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
