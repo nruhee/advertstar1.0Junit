@@ -27,7 +27,7 @@ import static org.junit.Assert.fail;
 
 public class AdvertiserNews {
 
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\AdvertiserNews.html";
+    public static final String REPORT_FILE_LOCATION = "target\\AdvertiserNews.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

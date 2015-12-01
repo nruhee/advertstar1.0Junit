@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class AdminOffers {
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\AdminOffers.html";
+    public static final String REPORT_FILE_LOCATION = "target\\AdminOffers.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

@@ -30,7 +30,7 @@ import static org.junit.Assert.fail;
 
 public class WebmasterTraffic {
 
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\WebmasterTraffic.html";
+    public static final String REPORT_FILE_LOCATION = "target\\WebmasterTraffic.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

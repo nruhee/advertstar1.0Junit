@@ -36,7 +36,7 @@ public class WebsiteBrokenLinks {
     String currentLink;
     String temp;
 
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\WebmasterBrokenLinks.html";
+    public static final String REPORT_FILE_LOCATION = "target\\WebmasterBrokenLinks.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

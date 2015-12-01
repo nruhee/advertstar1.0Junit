@@ -34,7 +34,7 @@ import static org.junit.Assert.fail;
 
 public class AdminHome {
 
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\AdminHome.html";
+    public static final String REPORT_FILE_LOCATION = "target\\AdminHome.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

@@ -31,7 +31,7 @@ import static org.junit.Assert.fail;
 
 public class WebmasterLogin {
 
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\WebmasterLogin.html";
+    public static final String REPORT_FILE_LOCATION = "target\\WebmasterLogin.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

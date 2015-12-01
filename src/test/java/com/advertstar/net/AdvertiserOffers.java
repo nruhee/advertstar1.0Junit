@@ -30,7 +30,7 @@ import static org.junit.Assert.fail;
 public class AdvertiserOffers {
 
 
-    public static final String REPORT_FILE_LOCATION = "target\\Reports\\AdvertiserOffers.html";
+    public static final String REPORT_FILE_LOCATION = "target\\AdvertiserOffers.html";
 
 
     private static ExtentReports extent;

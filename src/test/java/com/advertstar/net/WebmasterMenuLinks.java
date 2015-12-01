@@ -29,7 +29,7 @@ import static org.junit.Assert.fail;
 
 public class WebmasterMenuLinks {
 
-    public static final String REPORT_FILE_LOCATION = "WebmasterMenuLinks.html";
+    public static final String REPORT_FILE_LOCATION = "target\\WebmasterMenuLinks.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
