@@ -26,7 +26,7 @@ public class ReportMerge {
     public static void main(String[] args) throws Exception {
 
         ProcessBuilder builder = new ProcessBuilder(
-                "cmd.exe", "/c", "cd \"C:\\Users\\nruhee_srv\\Desktop\\Avertstar1.0Test\\target\\Reports\" && java -jar extentmerge.jar -dir \"C:\\Users\\nruhee_srv\\Desktop\\Avertstar1.0Test\\target\\Reports\" -out \"C:\\Users\\nruhee_srv\\Desktop\\Avertstar1.0Test\\target\\Reports\\Automation_report.html\" -css-file css.css");
+                "cd \"\\var\\lib\\jenkins\\report\" && java -jar extentmerge.jar -dir \"\\var\\lib\\jenkins\\jobs\\Advertstar1.0Test\\workspace\" -out \"\\var\\lib\\jenkins\\report\\Automation_report.html\" -css-file css.css");
         builder.redirectErrorStream(true);
         Process p = builder.start();
         BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
