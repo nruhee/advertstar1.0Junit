@@ -1,3 +1,5 @@
+package com.advertstar.net;
+
 
 /**
  * Created by shmodwalker on 11/11/2015.
@@ -15,9 +17,6 @@
  */
 
 
-
-package build;
-
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
@@ -26,8 +25,6 @@ import javax.mail.internet.MimeMultipart;
 import java.io.File;
 import java.util.Date;
 import java.util.Properties;
-
-
 
 
 public class EmailReport {

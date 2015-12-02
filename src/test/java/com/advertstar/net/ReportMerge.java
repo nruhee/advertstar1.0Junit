@@ -1,3 +1,5 @@
+package com.advertstar.net;
+
 
 /**
  * Created by shmodwalker on 11/11/2015.
@@ -15,10 +17,9 @@
  */
 
 
-package build;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 
 
 public class ReportMerge {
