@@ -38,7 +38,6 @@ public class ReportMerge {
             System.out.println(line);
         }
 
-
     }
 
 }
