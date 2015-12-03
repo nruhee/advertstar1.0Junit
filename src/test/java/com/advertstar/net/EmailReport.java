@@ -17,6 +17,8 @@ package com.advertstar.net;
  */
 
 
+import org.junit.Test;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
@@ -28,7 +30,8 @@ import java.util.Properties;
 
 
 public class EmailReport {
-    public static void main(String[] args) {
+    @Test
+    public void main() throws Exception {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "false");
