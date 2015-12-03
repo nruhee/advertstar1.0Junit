@@ -17,13 +17,15 @@ package com.advertstar.net;
  */
 
 
+import org.junit.Test;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
 
 public class ReportMerge {
-
+    @Test
     public static void main(String[] args) throws Exception {
 
         ProcessBuilder builder = new ProcessBuilder(
