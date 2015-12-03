@@ -36,10 +36,18 @@ public class ReportMerge {
         String line;
         while (true) {
             line = r.readLine();
-            if (line == null) { break; }
+            if (line == null) {
+                break;
+            }
             System.out.println(line);
         }
 
     }
 
+    public void submain() throws Exception {
+
+        ProcessBuilder builder = new ProcessBuilder
+                ("int_test.sh", "start");
+
+    }
 }
