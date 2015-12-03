@@ -26,7 +26,7 @@ import java.io.InputStreamReader;
 
 public class ReportMerge {
     @Test
-    public static void main() throws Exception {
+    public void main() throws Exception {
 
         ProcessBuilder builder = new ProcessBuilder(
                 "cd \"\\var\\lib\\jenkins\\report\" && java -jar extentmerge.jar -dir \"\\var\\lib\\jenkins\\jobs\\Advertstar1.0Test\\workspace\" -out \"\\var\\lib\\jenkins\\report\\Automation_report.html\" -css-file css.css");
