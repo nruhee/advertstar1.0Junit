@@ -61,7 +61,7 @@ public class EmailReport {
             multipart.addBodyPart(textPart);
 
             MimeBodyPart attachementPart = new MimeBodyPart();
-            attachementPart.attachFile(new File("\\var\\lib\\jenkins\\report\\Automation_report.html"));
+            attachementPart.attachFile(new File("/var/lib/jenkins/report/Automation_report.html"));
             multipart.addBodyPart(attachementPart);
 
             msg.setContent(multipart);
