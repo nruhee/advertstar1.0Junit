@@ -34,7 +34,7 @@ import static org.junit.Assert.fail;
 
 public class AdminHome {
 
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/AdminHome.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/var/lib/jenkins/jobs/Advertstar1.0Test/workspace/reports/AdminHome.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

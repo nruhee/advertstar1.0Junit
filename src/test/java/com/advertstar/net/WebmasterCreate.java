@@ -28,7 +28,7 @@ import static org.junit.Assert.fail;
 
 public class WebmasterCreate {
 
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/WebmasterCreate.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/var/lib/jenkins/jobs/Advertstar1.0Test/workspace/reports/WebmasterCreate.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
