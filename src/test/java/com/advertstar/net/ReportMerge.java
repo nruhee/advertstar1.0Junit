@@ -44,10 +44,4 @@ public class ReportMerge {
 
     }
 
-    public void submain() throws Exception {
-
-        ProcessBuilder builder = new ProcessBuilder
-                ("int_test.sh", "start");
-
-    }
 }
