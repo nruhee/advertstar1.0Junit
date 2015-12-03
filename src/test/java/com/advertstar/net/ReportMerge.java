@@ -17,10 +17,10 @@ package com.advertstar.net;
  */
 
 
-import org.junit.Test;
+        import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+        import java.io.BufferedReader;
+        import java.io.InputStreamReader;
 
 
 
@@ -29,7 +29,7 @@ public class ReportMerge {
     public void main() throws Exception {
 
         ProcessBuilder builder = new ProcessBuilder(
-                "java -jar extentmerge.jar -dir /var/lib/jenkins/jobs/Advertstar1.0Test/workspace -out /var/lib/jenkins/report/Automation_report.html");
+                "cd /var/lib/jenkins/jobs/Advertstar1.0Test/workspace && java -jar extentmerge.jar -dir /var/lib/jenkins/report -out /var/lib/jenkins/report/Automation_report.html");
         builder.redirectErrorStream(true);
         Process p = builder.start();
         BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
