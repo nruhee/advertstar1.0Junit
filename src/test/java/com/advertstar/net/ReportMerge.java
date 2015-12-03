@@ -29,7 +29,7 @@ public class ReportMerge {
     public void main() throws Exception {
 
         ProcessBuilder builder = new ProcessBuilder(
-                " cd \"/home");
+                 "/home");
         builder.redirectErrorStream(true);
         Process p = builder.start();
         BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
