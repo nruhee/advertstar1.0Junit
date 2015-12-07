@@ -60,7 +60,7 @@ public class WebmasterLogin {
     }
     @Test
     public void testlogin() throws Exception {
-        test = extent.startTest("Webmaster login", "Login and Logout of Webmaster");
+        test = extent.startTest("Webmaster login", "Login and Logout of Webmai knster");
 
 
 
