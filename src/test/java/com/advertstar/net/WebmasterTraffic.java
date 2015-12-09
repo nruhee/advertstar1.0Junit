@@ -21,7 +21,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import org.junit.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.UUID;
