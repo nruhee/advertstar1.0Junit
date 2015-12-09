@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class AdminOffers {
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/workspace/advertstar1.0Junit/reports/AdminOffers.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/var/lib/jenkins/jobs/Advertstar1.0Test/workspace/reports/AdminOffers.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
@@ -38,7 +38,7 @@ public class AdminOffers {
         driver = new FirefoxDriver();
         driver.manage().window().setSize(new Dimension(1920,1080));
         driver.manage().window().maximize();
-        baseUrl = "https://advertstar.net/";
+        baseUrl = "http://advertstar.net";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
     @Test
@@ -79,7 +79,7 @@ public class AdminOffers {
         new Select(driver.findElement(By.name("advertiser_offer[steps][step_0][pixel_type]"))).selectByVisibleText("Image");
         new Select(driver.findElement(By.id("advertiser_offer_steps_step___id__step_category_id"))).selectByVisibleText("Активный игрок");
         driver.findElement(By.cssSelector("button.btn.dropdown-toggle")).click();
-
+        driver.findElement(By.cssSelector("button.btn.dropdown-toggle")).click();
         driver.findElement(By.linkText("СНГ")).click();
         driver.findElement(By.name("advertiser_offer[steps][step_0][geotargetings][geotargeting_0][hold]")).clear();
         driver.findElement(By.name("advertiser_offer[steps][step_0][geotargetings][geotargeting_0][hold]")).sendKeys("10");
@@ -155,19 +155,27 @@ public class AdminOffers {
         driver.findElement(By.id("offer_name")).clear();
         driver.findElement(By.id("offer_name")).sendKeys("test");
         driver.findElement(By.id("in_test")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.linkText("Niresh-test"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.linkText("Niresh-test")));
         driver.findElement(By.cssSelector("i.icon-pencil")).click();
-
+        assertTrue(isElementPresent(By.cssSelector("h1 > span")));
         driver.findElement(By.linkText("Удалить оффер")).click();
-
+        assertEquals("Удаление оффера может быть чревато, хорошо подумаете прежде чем делать такой шаг.", closeAlertAndGetItsText());
         driver.findElement(By.id("in_test")).click();
         driver.findElement(By.id("offer_name")).clear();
         driver.findElement(By.id("offer_name")).sendKeys("test");
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content")));
 
 
         //ASSERT CLICKS
@@ -175,66 +183,123 @@ public class AdminOffers {
         driver.findElement(By.linkText("Офферы")).click();
         driver.findElement(By.linkText("Каталог офферов")).click();
         driver.findElement(By.id("exclusive")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("exclusive")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("exclusive_terms")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("exclusive_terms")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content")));
         driver.findElement(By.id("active")).click();
         driver.findElement(By.id("retargeting")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.xpath("//div[@id='offer-catalogue']/div/div[2]/div/div[2]/table/thead/tr/th[2]")));
         driver.findElement(By.id("retargeting")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("deeplink")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("deeplink")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("security_key")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("not_in_test")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content")));
         driver.findElement(By.id("feed")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("feed")).click();
         driver.findElement(By.xpath("//div[@id='filters']/div[3]/div[2]/div[2]/label[3]")).click();
         driver.findElement(By.id("private")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("#offer-catalogue > div.widget > div.widget-content")));
         driver.findElement(By.id("private")).click();
         driver.findElement(By.id("not_private")).click();
         driver.findElement(By.xpath("//div[@id='filters']/div[3]/div[3]/label[2]")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("not_private")).click();
         driver.findElement(By.id("with_coupons")).click();
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.xpath("//div[@id='offer-catalogue']/div/div[2]/div/div[2]/table/thead/tr/th[2]"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
+        assertTrue(isElementPresent(By.xpath("//div[@id='offer-catalogue']/div/div[2]/div/div[2]/table/thead/tr/th[2]")));
         driver.findElement(By.id("with_coupons")).click();
         driver.findElement(By.linkText("Сортировка по цене")).click();
         driver.findElement(By.linkText("По убывающей")).click();
@@ -252,9 +317,9 @@ public class AdminOffers {
         driver.findElement(By.linkText("Сначала новые")).click();
         driver.findElement(By.linkText("Сортировка по дате")).click();
         driver.findElement(By.linkText("Сначала старые")).click();
-
+        assertTrue(isElementPresent(By.linkText("Следующая →")));
         driver.findElement(By.linkText("Следующая →")).click();
-
+        assertTrue(isElementPresent(By.linkText("← Предыдущая")));
 
 
         //Проверка пикселей//
@@ -283,8 +348,13 @@ public class AdminOffers {
         driver.findElement(By.cssSelector("button.close")).click();
 
 
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.linkText("Редактировать"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
+        assertTrue(isElementPresent(By.linkText("Редактировать")));
         driver.findElement(By.linkText("Редактировать")).click();
 
 
@@ -301,7 +371,7 @@ public class AdminOffers {
 
         driver.findElement(By.name("commit")).click();
         driver.findElement(By.linkText("Удалить")).click();
-
+        assertTrue(closeAlertAndGetItsText().matches("^Вы уверены что хотите удалить контейнер[\\s\\S]$"));
 
         //PRODUCT FEEDS
 
@@ -316,10 +386,14 @@ public class AdminOffers {
         driver.findElement(By.name("commit")).click();
         driver.findElement(By.cssSelector("div.main-inner")).click();
         driver.findElement(By.xpath("(//a[contains(text(),'Удалить')])[13]")).click();
+        assertTrue(closeAlertAndGetItsText().matches("^Хорошо подумал[\\s\\S] Больше спрашивать не буду\\.$"));
+        for (int second = 0;; second++) {
+            if (second >= 60) fail("timeout");
+            try { if (isElementPresent(By.cssSelector("h4.alert-heading"))) break; } catch (Exception e) {}
+            Thread.sleep(1000);
+        }
 
-
-
-
+        assertTrue(isElementPresent(By.cssSelector("h4.alert-heading")));
     }
 
 
