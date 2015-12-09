@@ -31,7 +31,7 @@ import static org.junit.Assert.fail;
 
 public class AdvertiserFinance {
 
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/var/lib/jenkins/jobs/Advertstar1.0Test/workspace/reports/AdvertiserFinance.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/jobs/Advertstar1.0Test/AdvertiserFinance.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
