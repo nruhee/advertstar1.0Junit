@@ -36,7 +36,7 @@ public class WebsiteBrokenLinks {
     String currentLink;
     String temp;
 
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/report/var/lib/jenkins/jobs/Advertstar1.0Test/workspace/reports/WebmasterBrokenLinks.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/jobs/Advertstar1.0Test/reports/WebmasterBrokenLinks.html";
 
     private static ExtentReports extent;
     private WebDriver driver;

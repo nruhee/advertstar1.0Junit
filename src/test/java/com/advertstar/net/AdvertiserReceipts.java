@@ -30,7 +30,7 @@ import static org.junit.Assert.fail;
 public class AdvertiserReceipts {
 
 
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/jobs/Advertstar1.0Test/AdvertiserReceipts.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/jobs/Advertstar1.0Test/reports/AdvertiserReceipts.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
