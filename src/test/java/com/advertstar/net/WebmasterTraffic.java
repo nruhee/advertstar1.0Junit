@@ -22,6 +22,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import org.junit.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
@@ -52,7 +53,7 @@ public class WebmasterTraffic {
 
     @Before
     public void setUp() throws Exception {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().window().setSize(new Dimension(1920,1080));
         driver.manage().window().maximize();
         baseUrl = "https://advertstar.net/";
