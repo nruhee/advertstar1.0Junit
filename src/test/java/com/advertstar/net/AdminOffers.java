@@ -189,6 +189,7 @@ public class AdminOffers {
             Thread.sleep(1000);
         }
 
+
         assertTrue(isElementPresent(By.cssSelector("div.span7 > table.table > thead > tr > th")));
         driver.findElement(By.id("exclusive")).click();
         for (int second = 0;; second++) {
@@ -299,6 +300,32 @@ public class AdminOffers {
             Thread.sleep(1000);
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         assertTrue(isElementPresent(By.xpath("//div[@id='offer-catalogue']/div/div[2]/div/div[2]/table/thead/tr/th[2]")));
         driver.findElement(By.id("with_coupons")).click();
         driver.findElement(By.linkText("Сортировка по цене")).click();
@@ -314,12 +341,12 @@ public class AdminOffers {
         driver.findElement(By.linkText("Сортировка по CR")).click();
         driver.findElement(By.xpath("(//a[contains(text(),'По возрастающей')])[3]")).click();
         driver.findElement(By.linkText("Сортировка по дате")).click();
+
+
         driver.findElement(By.linkText("Сначала новые")).click();
         driver.findElement(By.linkText("Сортировка по дате")).click();
         driver.findElement(By.linkText("Сначала старые")).click();
-        assertTrue(isElementPresent(By.linkText("Следующая →")));
-        driver.findElement(By.linkText("Следующая →")).click();
-        assertTrue(isElementPresent(By.linkText("← Предыдущая")));
+
 
 
         //Проверка пикселей//
