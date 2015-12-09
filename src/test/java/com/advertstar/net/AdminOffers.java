@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class AdminOffers {
-    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/jobs/Advertstar1.0Test/reports/AdminOffers.html";
+    public static final String REPORT_FILE_LOCATION = "/var/lib/jenkins/workspace/advertstar1.0Junit/reports/AdminOffers.html";
 
     private static ExtentReports extent;
     private WebDriver driver;
