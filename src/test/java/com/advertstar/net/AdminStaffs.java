@@ -56,6 +56,7 @@ public class AdminStaffs {
         driver.navigate().to(URL);
         driver.manage().deleteAllCookies();
         driver = new FirefoxDriver();
+        driver.manage().window().setSize(new Dimension(1920,1080));
         driver.manage().window().maximize();
         baseUrl = "https://advertstar.net/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

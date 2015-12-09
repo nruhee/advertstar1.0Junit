@@ -55,6 +55,7 @@ public class AdvertiserReceipts {
     public void setUp() throws Exception {
 
         driver = new FirefoxDriver();
+        driver.manage().window().setSize(new Dimension(1920,1080));
         driver.manage().window().maximize();
         baseUrl = "https://advertstar.net/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
