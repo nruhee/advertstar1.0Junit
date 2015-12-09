@@ -79,7 +79,7 @@ public class AdminOffers {
         new Select(driver.findElement(By.id("advertiser_offer_steps_step___id__step_category_id"))).selectByVisibleText("Активный игрок");
         driver.findElement(By.cssSelector("button.btn.dropdown-toggle")).click();
         driver.findElement(By.cssSelector("button.btn.dropdown-toggle")).click();
-        driver.findElement(By.linkText("СНГ")).click();
+        driver.findElement(By.xpath("//div[3]/div/ul/li[3]/a")).click();
         driver.findElement(By.name("advertiser_offer[steps][step_0][geotargetings][geotargeting_0][hold]")).clear();
         driver.findElement(By.name("advertiser_offer[steps][step_0][geotargetings][geotargeting_0][hold]")).sendKeys("10");
 
