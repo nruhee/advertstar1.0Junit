@@ -78,7 +78,7 @@ public class AdminOffers {
         new Select(driver.findElement(By.name("advertiser_offer[steps][step_0][pixel_type]"))).selectByVisibleText("Image");
         new Select(driver.findElement(By.id("advertiser_offer_steps_step___id__step_category_id"))).selectByVisibleText("Активный игрок");
         driver.findElement(By.cssSelector("button.btn.dropdown-toggle")).click();
-        driver.findElement(By.cssSelector("button.btn.dropdown-toggle")).click();
+
 
 
         for (int second = 0;; second++) {
